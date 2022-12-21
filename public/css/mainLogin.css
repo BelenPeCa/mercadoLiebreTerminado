@@ -1,0 +1,291 @@
+@import url(normalize.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #ebebeb;
+    margin: auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 16px 0px;
+}
+
+.nombre-usuario input{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: none;
+    outline: none;
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contraseña input{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: none;
+    outline: none;
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.boton-enviar button{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #03264C;
+    box-shadow: none;
+    outline: none;
+    font-size: 18px;
+    margin: 30px 20px 20px 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+.boton-enviar button:hover {
+    background-color: #0022AA;
+}
+
+.boton-enviar a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.cajaBusqueda {
+    background-color: #ffffff;
+    /* width: 45%; */
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
+}
+.cajaBusqueda form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+.caja-busqueda {
+    width: 100%;
+    display: inline;
+    border: none;
+}
+
+.lupa button{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+}
+.lupa{
+    width: 10%;
+    height: 10%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ------------- Media Query -------------- */
+@media (min-width: 420px) {
+    .barraNavegacion {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .banner {
+        width: 100vw;
+        height: 27vh;
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .imgBanner {
+        width: 100vw;
+        height: 30vh;
+        vertical-align: top;
+    }
+    /* .logo-busqueda-cuotas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    } */
+    .logo-barraBusqueda {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .lupa {
+        padding: 0px;
+        margin-left: 6px;
+        font-size: 11px;
+    }
+    .cajaLogo {
+        width: 30%;
+    }
+    .cajaBusqueda {
+        width: 30%;
+        padding: 1px;
+    }
+
+    .cajaCuotas {
+        width: 30%;
+    }
+    .buscador {
+        font-size: 16px;
+        padding: 4px;
+        background-color: white;
+        border-radius: 2px;
+        width: 88%;
+        border:none;
+    }
+    .barraNavegacion {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .barraNavegacion ul {
+        display: flex;
+    }
+    .barraNavegacion li {
+        margin: 0px 5px;
+    }
+    .nav {
+        padding: 5px;
+    }
+    main {
+        padding: 16px 150px;
+    }
+    .nombre-usuario input {
+        width: 60vw;
+    }
+    .contraseña input {
+        width: 60vw;
+    }
+    .boton-enviar button {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 769px) {
+    .banner {
+        height: 37vh;
+    }
+    .imgBanner {
+        height: 38vh;
+    }
+    .barraNavegacion {
+        padding: 20px 20px 40px 20px;
+    }
+    .logo-barraBusqueda {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cajaLogo {
+        width: 30%;
+    }
+    .cajaBusqueda {
+        width: 30%;
+    }
+
+    .cajaCuotas {
+        width: 30%;
+    }
+    .buscador {
+        font-size: 13px;
+        color: #666;
+        padding: 4px;
+        margin-left: 50px;
+        background-color: white;
+        border-radius: 2px;
+        width: 74%;
+    }
+    .barraNavegacion {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .barraNavegacion ul {
+        display: flex;
+    }
+    .barraNavegacion li {
+        margin: 0px 5px;
+        margin-bottom: 10px;
+
+    }
+    .nav {
+        padding: 5px;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .buscador {
+        margin-left: 0px;
+    }
+    main {
+        align-items: center;
+    }
+    .nombre-usuario input {
+        width: 50vw;
+        text-align: center;
+    }
+    .contraseña input {
+        width: 50vw;
+        text-align: center;
+    }
+    .boton-enviar button {
+        width: 50vw;
+        text-align: center;
+    }
+}
+@media (min-width: 1200px) {
+    .banner {
+        height: 43vh;
+    }
+    .imgBanner {
+        height: 44vh;
+    }
+    .lupa {
+        width: 10%;
+    }
+    .textoPropaganda {
+        margin-left: 40%;
+    }
+    .cajaBusqueda {
+        width: 21%;
+    }
+    .cajaBusqueda form {
+        margin: 2px;
+    }
+}

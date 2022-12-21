@@ -1,0 +1,56 @@
+/* Tamaño tipografía de titulares en el footer*/
+.titularesFooter {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Tamaño tipografía de cuerpos de texto en el footer*/
+.textofooter {
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.articuloFooter {
+    text-align: center;
+    margin: auto;
+}
+footer section {
+
+    text-align: center;
+    margin: auto;
+    padding: 30px 20px 20px 20px;
+}
+.iconosFooter {
+    color: #03264C;
+    font-size: 2em;
+    text-align: center;
+    margin: 10px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.iconosFooter:hover {
+    color: #0022AA;
+}
+
+.textoFooter {
+    padding: 15px 20px 30px 20px
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 50px 10px 50px;
+}
+
+@media (min-width: 769px) {
+    .seccion-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+

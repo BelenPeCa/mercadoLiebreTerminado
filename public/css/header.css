@@ -1,0 +1,291 @@
+/* Color de fondo del header*/
+header{
+    background-color: #EAC926;
+}
+
+/* Logo: tamaño de logo */
+.logo {
+    width: 100%;
+    padding: 21px 30px 20px 0px
+}
+.cajaLogo {
+    width: 50%;
+}
+/* Barra de busqueda: Tamaño tipografía, color tipográfico*/
+.buscador {
+    width: 80%;
+    font-size: 12px;
+    color: #666;
+    padding: 3px;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    margin: auto;
+}
+
+.lupa {
+
+    font-size: 10px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 2px;
+    font-size: 11px;
+
+}
+.logo-barraBusqueda {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto 'Comprá en cuotas y sin tarjeta de credito': Tamaño tipografía, */
+.textoPropaganda {
+    font-size: 12px;
+    margin: auto;
+    padding: 8px 0px;
+    text-align: center;
+}
+
+.cajaBusqueda {
+    width: 36%;
+    display: flex;
+    padding: 20px;
+
+}
+
+/* Barra de navegación (header): Tamaño tipografía, saque los puntos de inicio de una lista desordenada */
+.nav {
+    font-size: 12px;
+    list-style: none;
+    font-weight: bolder;
+}
+
+/* Barra de navegación (header): Saqué la linea de abajo por ser un ancla, color tipográfico,*/
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+/* Intentando centrar el menu de hamburguesa */
+.burger-menu {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: block;
+}
+
+.burger-menu i {
+    background-color: #1259c3;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.banner {
+    width: 100vw;
+    height: 18vh;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.imgBanner {
+    width: 100vw;
+    height: 23vh;
+    vertical-align: top;
+}
+
+.barraNavegacion {
+    display: none;
+}
+.cajaBusqueda {
+    background-color: #ffffff;
+    width: 37%;
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
+    padding: 2px;
+}
+.cajaBusqueda form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+}
+.caja-busqueda {
+    width: 100%;
+    display: inline;
+    border: none;
+}
+
+.lupa button{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+}
+.lupa{
+    width: 18%;
+    height: 10%;
+    padding-right: 11px;
+    margin: 0px;
+    font-size: 11px;
+}
+/* ------------- Media Query -------------- */
+@media (min-width: 420px) {
+    .barraNavegacion {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .banner {
+        width: 100vw;
+        height: 27vh;
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .imgBanner {
+        width: 100vw;
+        height: 30vh;
+        vertical-align: top;
+    }
+    /* .logo-busqueda-cuotas {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    } */
+    .logo-barraBusqueda {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .lupa {
+        padding: 0px;
+        margin-left: 6px;
+        font-size: 11px;
+    }
+    .cajaLogo {
+        width: 30%;
+    }
+    .cajaBusqueda {
+        width: 30%;
+        padding: 1px;
+    }
+
+    .cajaCuotas {
+        width: 30%;
+    }
+    .buscador {
+        font-size: 16px;
+        padding: 4px;
+        background-color: white;
+        border-radius: 2px;
+        width: 88%;
+        border:none;
+    }
+    .barraNavegacion {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .barraNavegacion ul {
+        display: flex;
+    }
+    .barraNavegacion li {
+        margin: 0px 5px;
+    }
+    .nav {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 769px) {
+    .banner {
+        height: 37vh;
+    }
+    .imgBanner {
+        height: 38vh;
+    }
+    .barraNavegacion {
+        padding: 20px 20px 40px 20px;
+    }
+    .logo-barraBusqueda {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cajaLogo {
+        width: 30%;
+    }
+    .cajaBusqueda {
+        width: 30%;
+    }
+
+    .cajaCuotas {
+        width: 30%;
+    }
+    .buscador {
+        font-size: 13px;
+        color: #666;
+        padding: 4px;
+        margin-left: 50px;
+        background-color: white;
+        border-radius: 2px;
+        width: 74%;
+    }
+    .barraNavegacion {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .barraNavegacion ul {
+        display: flex;
+    }
+    .barraNavegacion li {
+        margin: 0px 5px;
+        margin-bottom: 10px;
+
+    }
+    .nav {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 900px) {
+    .buscador {
+        margin-left: 0px;
+    }
+
+}
+@media (min-width: 1200px) {
+    .banner {
+        height: 43vh;
+    }
+    .imgBanner {
+        height: 44vh;
+    }
+    .lupa {
+        width: 10%;
+    }
+    .textoPropaganda {
+        margin-left: 40%;
+    }
+    .cajaBusqueda {
+        width: 21%;
+    }
+}
