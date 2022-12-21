@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static('./public'));
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {console.log('Servidor corriendo en puerto http://localhost' + port)});
+app.listen(port, () => console.log(`Servidor corriendo en puerto http://localhost:${port}`));
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
